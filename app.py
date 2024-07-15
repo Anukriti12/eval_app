@@ -4,8 +4,8 @@ from openai import AzureOpenAI
 st.title('Output from GPT-4 for Text Simplification')
 
 # Replace with your Azure OpenAI endpoint and API key
-azure_openai_endpoint = 'https://accessibility.openai.azure.com/'
-azure_openai_api_key = '84482bf6ac8e4e85a3e2bd038a501240'
+azure_openai_api_key  = st.sidebar.text_input('Azure OpenAI API Key')
+azure_openai_endpoint = st.sidebar.text_input('Azure OpenAI Endpoint')
 
 import os
 
